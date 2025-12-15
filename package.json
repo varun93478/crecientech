@@ -1,0 +1,30 @@
+{
+  "name": "crecientechweb",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "audit": "node compliance-check.js",
+    "audit:verify": "node compliance-check.js --verify",
+    "test": "node tests/run-tests.js",
+    "optimize:images": "node scripts/optimize-images.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://crecientechdevelop@bitbucket.org/deepakkumarc/crecientechweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/deepakkumarc/crecientechweb/issues"
+  },
+  "homepage": "https://bitbucket.org/deepakkumarc/crecientechweb#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.2",
+    "sharp": "^0.34.5"
+  }
+}

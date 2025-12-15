@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog • Crecientech</title>
+  <meta name="description" content="Read the latest articles from Crecientech on software development, IT consulting, and digital transformation.">
+  <link rel="canonical" href="https://www.crecientech.com/blog/" />
+  <meta property="og:title" content="Blog • Crecientech">
+  <meta property="og:description" content="Insights on software development, IT consulting, and digital transformation.">
+  <meta property="og:url" content="https://www.crecientech.com/blog/">
+  <meta property="og:image" content="https://www.crecientech.com/img/navbar/navbar_logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog • Crecientech">
+  <meta name="twitter:description" content="Insights on software development, IT consulting, and digital transformation.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.crecientech.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.crecientech.com/blog/"}]}</script>
+
+  <!-- Reuse site CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Blog-only tiny styles -->
+  <style>
+    .blog-wrap{max-width:980px;margin:32px auto;padding:0 16px}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin:12px 0}
+    .card a{text-decoration:none;color:inherit}
+    .meta{color:#6b7280;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="blog-wrap">
+    <h1>Blog</h1>
+    <div id="blog-list">Loading…</div>
+  </div>
+
+  <script>
+    async function getPosts() {
+      // 1) try local API (dev)
+      try {
+        const r = await fetch('http://localhost:3001/posts', { cache: 'no-store' });
+        if (r.ok) return await r.json();
+      } catch (e) { /* ignore */ }
+      // 2) fallback to static json (prod)
+      const r2 = await fetch('index.json', { cache: 'no-store' });
+      return r2.ok ? r2.json() : [];
+    }
+    function fmt(iso){ try { return new Date(iso+'T00:00:00').toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'});} catch(e){return iso;} }
+
+    async function renderList(){
+      const container = document.getElementById('blog-list');
+      const posts = (await getPosts()).sort((a,b)=> new Date(b.date)-new Date(a.date));
+      if (!posts.length){ container.innerHTML = '<p>No posts yet.</p>'; return; }
+      container.innerHTML = posts.map(p=>`
+        <article class="card">
+          <a href="post.html?slug=${encodeURIComponent(p.slug)}">
+            <h2>${p.title}</h2>
+            <p class="meta">${fmt(p.date)} • ${(p.minutes||3)} min read${p.tags?.length? ` • ${p.tags.join(', ')}`:''}</p>
+            <p>${p.excerpt||''}</p>
+          </a>
+        </article>
+      `).join('');
+    }
+    renderList();
+  </script>
+</body>
+</html>

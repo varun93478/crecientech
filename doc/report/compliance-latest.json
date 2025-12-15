@@ -1,0 +1,23 @@
+{
+  "findings": [],
+  "summary": {
+    "counts": {},
+    "total": 0
+  },
+  "status": "pass",
+  "timestamp": "2025-12-02T06:06:03.543Z",
+  "version": "1.0.0",
+  "resolutions": [
+    {
+      "category": "SEO",
+      "rule": "Weak Image Alt",
+      "file": "D:\\Work\\Crecientech\\Website\\latest\\cricientech\\index.html",
+      "resolution": "Provided descriptive alt text for team images (3 entries)",
+      "metrics": {
+        "alts_missing_before": 3,
+        "alts_missing_after": 0
+      },
+      "timestamp": "2025-12-02T06:06:03Z"
+    }
+  ]
+}

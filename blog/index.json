@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Hello Local World",
+    "slug": "hello-local-world",
+    "date": "2025-09-30",
+    "minutes": 3,
+    "tags": ["Demo"],
+    "excerpt": "first local post"
+  }
+]
