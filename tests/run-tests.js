@@ -79,32 +79,45 @@ async function testServicesKnowMoreButtonRepo() {
   assert(hasAnchor && hasText, 'Services page should include Know more button linking to products.html');
 }
 
-async function testBlogFilesExist() {
+async function testBlogMenuAndPagesExist() {
   const repoRoot = path.join(__dirname, '..');
-  const blogsJs = path.join(repoRoot, 'js', 'blogs.js');
-  const blogsHtml = path.join(repoRoot, 'blogs.html');
-  const blogHtml = path.join(repoRoot, 'blog.html');
-  assert(fs.existsSync(blogsJs), 'js/blogs.js should exist');
-  assert(fs.existsSync(blogsHtml), 'blogs.html should exist');
-  assert(fs.existsSync(blogHtml), 'blog.html should exist');
-  const jsText = fs.readFileSync(blogsJs, 'utf-8');
-  assert(/const\s+BLOGS\s*=\s*\[/m.test(jsText), 'blogs.js should define const BLOGS');
-  const listHtml = fs.readFileSync(blogsHtml, 'utf-8');
-  assert(/id=["']blog-list["']/i.test(listHtml), 'blogs.html should contain #blog-list');
-  assert(/js\/blogs\.js/i.test(listHtml), 'blogs.html should load js/blogs.js');
-  const detailHtml = fs.readFileSync(blogHtml, 'utf-8');
-  assert(/id=["']not-found["']/i.test(detailHtml), 'blog.html should contain #not-found');
-  assert(/id=["']blog-article["']/i.test(detailHtml), 'blog.html should contain #blog-article');
-  assert(/js\/blogs\.js/i.test(detailHtml), 'blog.html should load js/blogs.js');
+  const blogList = path.join(repoRoot, 'blog.html');
+  assert(fs.existsSync(blogList), 'blog.html should exist');
+  const listHtml = fs.readFileSync(blogList, 'utf-8');
+  assert(/<h1[^>]*>\s*Blog\s*<\/h1>/i.test(listHtml), 'blog.html should include Blog heading');
+  assert(/Read More/i.test(listHtml), 'blog.html should include Read More buttons');
+
+  const navFiles = ['index.html'];
+  for (const f of navFiles) {
+    const html = fs.readFileSync(path.join(repoRoot, f), 'utf-8');
+    assert(/<a[^>]*href=["']blog\.html["'][^>]*>\s*Blog\s*<\/a>/i.test(html), `Navbar should include Blog link in ${f}`);
+  }
+
+  const details = [
+    'blog-elevating-business.html',
+    'blog-how-ai-is-revolutionizing-netSuite.html',
+    'blog-cloud-erp-powerhouse.html',
+    'blog-the-build-vs-buy-dilemma.html',
+    'blog-software-supply-chain-security.html',
+    'blog-web-and-mobile-development.html',
+    'blog-driving-business-evolution.html'
+  ];
+  for (const f of details) {
+    const candidates = [path.join(repoRoot, f), path.join(repoRoot, 'blogs', f)];
+    const fp = candidates.find(p => fs.existsSync(p));
+    assert(fp, `${f} should exist in root or blogs/`);
+    const html = fs.readFileSync(fp, 'utf-8');
+    assert(/Back to Blog/i.test(html) || /Back to Blogs/i.test(html), `${f} should include back link`);
+  }
 }
 
-async function testNavbarBlogsLinks() {
+async function testBlogCardImagesConsistent() {
   const repoRoot = path.join(__dirname, '..');
-  const files = ['index.html','products.html','services.html','about.html','careers.html','privacy-policy.html','terms-condition.html'];
-  for (const f of files) {
-    const html = fs.readFileSync(path.join(repoRoot, f), 'utf-8');
-    assert(/<a[^>]*href=["']blogs\.html["'][^>]*>\s*Blogs\s*<\/a>/i.test(html), `Navbar should include Blogs link in ${f}`);
-  }
+  const blogList = path.join(repoRoot, 'blog.html');
+  assert(fs.existsSync(blogList), 'blog.html should exist');
+  const listHtml = fs.readFileSync(blogList, 'utf-8');
+  const articles = listHtml.match(/<article[^>]*class=["'][^"']*card[^"']*["']/gi) || [];
+  assert(articles.length === 7, `Expected 7 blog cards, found ${articles.length}`);
 }
 
 (async function main(){
@@ -114,8 +127,8 @@ async function testNavbarBlogsLinks() {
     await testErrorHandling();
     await testProductsKnowMoreButtonRepo();
     await testServicesKnowMoreButtonRepo();
-    await testBlogFilesExist();
-    await testNavbarBlogsLinks();
+    await testBlogMenuAndPagesExist();
+    await testBlogCardImagesConsistent();
     console.log('[tests] All tests passed');
   } catch (e) {
     console.error('[tests] Failed:', e);

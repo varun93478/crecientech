@@ -1119,7 +1119,7 @@ footer button:hover .fa-arrow-right {
 .navbar-brand>img {
     height: 50px;
     width: auto;
-    position: relative;
+    /* position: relative; */
     right: 43px;
 }
 
