@@ -57,21 +57,22 @@
 
     <section class="careers-hero py-5">
         <div class="container">
-            <h1 class="mb-3">Careers at Crecientech. Coming soon</h1>
-            <!-- <p class="lead">Join a team building custom software, digital products, and AI-powered platforms for global clients.</p> -->
+            <h1 class="mb-3 font-38-josefin secondary-black">Careers at Crecientech</h1>
+            <p class="lead primary-gray">Join a team building custom software, digital products, and AI-powered platforms for global clients.</p>
         </div>
     </section>
 
-    <!-- <section class="careers-list py-4">
+    <section class="careers-list py-4">
         <div class="container">
-            <h2 class="mb-4">Open Positions</h2>
+            <h2 class="mb-4 font-24-josefin">Open Positions</h2>
             <div id="jobs-container" class="row g-4"></div>
+            <div id="pagination-container" class="mt-4"></div>
             <p id="no-jobs-message" class="text-muted d-none">
                 We don’t have any open positions right now. Check back soon or write to us at
-                <a href="mailto:careers@crecientech.com">careers@crecientech.com</a>.
+                <a href="mailto:ambassador@crecientech.com">ambassador@crecientech.com</a>.
             </p>
         </div>
-    </section> -->
+    </section>
 
       <footer class="text-white" id="contact-us">
         <div class="container footer-top text-left text-white">
@@ -100,7 +101,7 @@
                     <h2 class="font-mont">Location</h2>
                     <p>No.135, 7th Main Road, 4th Block, Jayanagar, Bangalore-560 011</p>
                     <p>+91-9740033312</p>
-                    <p>sales@crecientech.com</p>
+                    <p>ctsales@crecientech.com</p>
                 </div>
                 <!-- Contact Us Start -->
                 <div class="col-lg-6 col-md-12">
@@ -157,58 +158,11 @@
         </div>
     </footer>
 
-    <script>
-            const JOBS = [
-                {
-                    id: "senior-ui-ux-designer",
-                    title: "Senior UI/UX Designer",
-                    department: "Design",
-                    location: "Bangalore, India",
-                    type: "Full-time",
-                    experience: "4+ years",
-                    status: "open",
-                    description: "Lead end-to-end UX for B2B SaaS and platform projects, collaborating closely with product and engineering teams.",
-                    applyLink: "mailto:careers@crecientech.com?subject=Senior%20UI%2FUX%20Designer"
-                }
-            ];
-
-            function renderJobs() {
-                const container = document.getElementById("jobs-container");
-                const noJobsMessage = document.getElementById("no-jobs-message");
-
-                container.innerHTML = "";
-                const openJobs = JOBS.filter(job => job.status === "open");
-
-                if (openJobs.length === 0) {
-                    noJobsMessage.classList.remove("d-none");
-                    return;
-                }
-                noJobsMessage.classList.add("d-none");
-
-                openJobs.forEach(job => {
-                    const col = document.createElement("div");
-                    col.className = "col-md-6 col-lg-4";
-                    col.innerHTML = `
-            <div class="card h-100 shadow-sm">
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5 mb-2">${job.title}</h3>
-                <p class="small text-muted mb-2">${job.department} · ${job.location} · ${job.type}</p>
-                <p class="mb-3">${job.description}</p>
-                <span class="badge bg-success align-self-start mb-3">Open</span>
-                <a href="${job.applyLink}" class="btn btn-primary mt-auto">Apply via Email</a>
-              </div>
-            </div>
-          `;
-                    container.appendChild(col);
-                });
-            }
-
-            document.addEventListener("DOMContentLoaded", renderJobs);
-    </script>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/careers-data.js"></script>
+    <script src="js/careers.js"></script>
     <script src="js/app.js"></script>
 </body>
 
