@@ -155,5 +155,99 @@ const CAREERS_DATA = [
                 <li>Actively engaged in a design partnership with a large, globally distributed enterprise to shape production deployments</li>
             </ul>
         `
+    },
+    {
+        id: "mean-stack-developer",
+        title: "MEAN Stack Developer",
+        department: "Engineering",
+        location: "Bangalore, India",
+        type: "Full-time",
+        experience: "3+ years",
+        postedDate: "2024-01-22",
+        deadline: "Open until filled",
+        description: "We're looking for a skilled and enthusiastic MEAN Stack Developer to join our development team to build robust, scalable, and high-performing web applications.",
+        fullDescription: `
+            <p>We're looking for a skilled and enthusiastic MEAN Stack Developer to join our development team. The ideal candidate will be responsible for the entire application lifecycle, from conception to deployment, focusing on building robust, scalable, and high-performing web applications using the MEAN framework. This role requires a deep understanding of both client-side (Angular) and server-side (Node.js/Express.js) development, along with database management (MongoDB).</p>
+
+            <h3 class="mt-4">Key Responsibilities</h3>
+            <ul>
+                <li><strong>Application Development:</strong> Design, develop, test, and maintain scalable web applications using the complete MEAN stack (MongoDB, Express.js, Angular, Node.js).</li>
+                <li><strong>Front-End Development:</strong> Create responsive, engaging, and highly interactive user interfaces using Angular and related technologies (HTML, CSS, TypeScript/JavaScript).</li>
+                <li><strong>Back-End Development:</strong> Build efficient RESTful APIs and server-side logic using Node.js and Express.js.</li>
+                <li><strong>Database Management:</strong> Design, implement, and manage data models and queries within MongoDB (a NoSQL database), ensuring data integrity and optimal performance.</li>
+                <li><strong>Code Quality & Maintenance:</strong> Write clean, efficient, maintainable, and well documented code. Perform regular code reviews and apply best practices.</li>
+                <li><strong>Performance & Optimization:</strong> Identify and resolve bottlenecks, debug issues, and optimize application performance for speed and scalability.</li>
+                <li><strong>Collaboration:</strong> Work closely with cross-functional teams, including UI/UX designers, product managers, and other engineers, to define features and deliver cohesive products.</li>
+                <li><strong>SDLC Participation:</strong> Participate actively throughout the full Software Development Lifecycle (SDLC), including planning, development, testing, deployment, and maintenance.</li>
+                <li><strong>Staying Current:</strong> Keep up-to-date with emerging technologies and industry trends in the JavaScript and web development space.</li>
+            </ul>
+
+            <h3 class="mt-4">Required Skills and Qualifications</h3>
+            <ul>
+                <li><strong>MEAN Stack Expertise:</strong> Proven, hands-on experience with MongoDB, Express.js, Angular (specify version if necessary, e.g., Angular 2+ or AngularJS), and Node.js.</li>
+                <li><strong>Core Technologies:</strong> Strong proficiency in JavaScript (including modern features like ES6+), HTML5, and CSS3.</li>
+                <li><strong>API Development:</strong> Experience designing, building, and consuming RESTful APIs.</li>
+                <li><strong>Version Control:</strong> Proficiency with Github or other version control systems.</li>
+                <li><strong>Testing:</strong> Experience with unit testing and debugging tools/frameworks.</li>
+                <li><strong>Soft Skills:</strong> Excellent analytical and problem-solving skills, strong communication, and the ability to work effectively both independently and as part of a team.</li>
+                <li><strong>Education:</strong> Bachelor’s degree in Computer Science, Software Engineering, or a related field (or equivalent practical experience).</li>
+                <li>Experience with TypeScript.</li>
+                <li>Familiarity with GCP cloud platforms and containerization (Docker).</li>
+                <li>Knowledge of Agile/Scrum methodologies.</li>
+                <li>Experience with front-end state management libraries.</li>
+                <li>Understanding of security principles for web applications.</li>
+            </ul>
+        `
+    },
+    {
+        id: "senior-backend-engineer",
+        title: "Senior Backend Engineer",
+        department: "Engineering",
+        location: "Bangalore, India",
+        type: "Full-time",
+        experience: "3-5+ years",
+        postedDate: "2024-01-22",
+        deadline: "Open until filled",
+        description: "Lead technical architecture decisions, design scalable systems, and own critical system components including cryptographic discovery engines and third-party integrations.",
+        fullDescription: `
+            <p>We are seeking a Senior Backend Engineer (3-5+ years) to lead technical architecture decisions, design scalable systems, mentor junior developers, drive code quality standards, and own critical system components including cryptographic discovery engines and third-party integrations. You will implement features independently, contribute to API design, develop integration modules, maintain CI/CD pipelines, and collaborate with senior engineers on architectural decisions.</p>
+
+            <h3 class="mt-4">Core Responsibilities</h3>
+            <ul>
+                <li>Design and implement scalable cryptographic asset discovery and inventory engine</li>
+                <li>Build primarily agentless discovery workflows with support for optional agent-based modules</li>
+                <li>Integrate with cloud providers (AWS, Azure, GCP) and enterprise platforms (ServiceNow, Tanium, Tenable, CrowdStrike)</li>
+                <li>Develop backend services and REST/GraphQL APIs for cryptographic analysis, telemetry, and lifecycle workflows</li>
+                <li>Contribute to AI-driven risk scoring and prioritization models</li>
+                <li>Build and maintain CI/CD pipelines, automated testing, and deployment workflows</li>
+                <li>Support certificate, key, and protocol lifecycle visibility and management across distributed systems</li>
+                <li>Design and implement data correlation models linking IT assets to cryptographic assets</li>
+                <li>Develop normalization and deduplication logic for cryptographic data from multiple sources</li>
+                <li>Implement temporal tracking systems for certificate rotation and cryptographic risk monitoring</li>
+            </ul>
+
+            <h3 class="mt-4">Required Technical Skills</h3>
+            <ul>
+                <li><strong>Programming Languages:</strong> Strong proficiency in Python (required), Node.js, TypeScript, NestJS or similar backend frameworks</li>
+                <li><strong>Security & Cryptography:</strong> Solid understanding of TLS/SSL, PKI, cryptographic protocols, certificate lifecycle, key management</li>
+                <li><strong>Cloud Platforms:</strong> Hands-on experience with Azure (Functions, App Service, AKS, ACR, Key Vault, storage, monitoring). AWS and GCP knowledge is a plus</li>
+                <li><strong>APIs & Integration:</strong> REST API design, GraphQL, third-party API integration (ServiceNow, Tanium, Tenable, CrowdStrike)</li>
+                <li><strong>Database Systems:</strong> Experience with relational databases (PostgreSQL, SQL Server) in production systems, data modeling, query optimization</li>
+                <li><strong>DevOps & CI/CD:</strong> Docker, Kubernetes, GitHub Actions, Azure DevOps, automated testing, deployment pipelines</li>
+                <li><strong>Security Tooling:</strong> Experience building security scanners, asset discovery systems, SIEM pipelines, IaC-driven deployments</li>
+                <li><strong>Networking:</strong> Deep understanding of TCP/IP, DNS, certificate management, network protocols</li>
+            </ul>
+
+            <h3 class="mt-4">Preferred Qualifications</h3>
+            <ul>
+                <li>Experience with Rust for high-performance cryptographic operations</li>
+                <li>Familiarity with graph databases (Neo4j, Amazon Neptune) for asset relationship modeling</li>
+                <li>Knowledge of NIST PQC standards (ML-KEM, ML-DSA, SPHINCS+, FN-DSA)</li>
+                <li>Experience training or deploying AI/ML models in production systems</li>
+                <li>Hands-on experience with OpenSSL, liboqs, or other cryptographic libraries</li>
+                <li>Familiarity with Tanium, Tenable, or CrowdStrike APIs and SDKs</li>
+                <li>Background in cybersecurity, compliance frameworks (SOC 2, ISO 27001), or regulatory technology</li>
+            </ul>
+        `
     }
 ];
