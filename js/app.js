@@ -114,7 +114,7 @@ $(document).ready(function () {
                 if (!message || message.length < 5) { showFieldError($message, 'Please enter a message (min 5 characters).'); firstInvalid = firstInvalid || $message; }
                 if (firstInvalid) { status.addClass('text-danger').text('Please correct the highlighted fields.'); firstInvalid.focus(); return; }
                 btn.prop('disabled', true).attr('aria-busy', 'true');
-                fetch('https://formsubmit.co/ajax/ctsales@crecienteh.com', {
+                fetch('https://formsubmit.co/ajax/varun.j@crecientech.com', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                     body: JSON.stringify({ name: name, email: email, subject: subject, message: message })
