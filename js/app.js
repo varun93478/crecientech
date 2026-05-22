@@ -117,7 +117,7 @@ $(document).ready(function () {
                 fetch('https://formsubmit.co/ajax/ctsales@crecientech.com', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                    body: JSON.stringify({ Name: name, email: Email, subject: Subject, message: Message, "_captcha": "false", "_template": "table" })
+                    body: JSON.stringify({ name: name, email: email, subject: subject, message: message, "_captcha": "false", "_template": "table" })
                 }).then(function (r) {
                     if (!r.ok) throw new Error('fail');
                     return r.json();
