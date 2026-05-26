@@ -94,8 +94,9 @@ $(document).ready(function () {
             var status = form.find('.contact-status');
             var btn = form.find('button[type="submit"]');
             btn.on('click', function () { status.removeClass('text-danger text-success').text(''); });
-            form.on('submit', function (e) {
+            form.off('submit').on('submit', function (e) {
                 e.preventDefault();
+                if (btn.prop('disabled')) return;
                 status.removeClass('text-danger text-success').text('');
                 var $name = form.find('#contact-name');
                 var $email = form.find('#contact-email');
