@@ -18,8 +18,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script
+        src="https://polyfill.io/v3/polyfill.min.js?features=fetch,Promise,URLSearchParams,Element.prototype.closest,Array.prototype.find,Array.prototype.includes"></script>
+    <!-- SEO: Updated meta description -->
     <meta name="description"
-        content="Crecientech offers custom software development and digital solutions tailored for modern businesses.">
+        content="Crecientech offers custom software development, web & mobile apps, and digital transformation services for modern businesses in India and across the globe.">
     <link rel="canonical" href="https://www.crecientech.com/" />
 
     <!-- Bootstrap CSS -->
@@ -28,11 +31,83 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="canonical" href="https://www.crecientech.com/" />
+    <!-- Social Meta: Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Crecientech Infosystem">
+    <meta property="og:title" content="Custom Software Development & Digital Transformation | Crecientech">
+    <meta property="og:description"
+        content="Crecientech offers custom software development, web & mobile apps, and digital transformation services for modern businesses in India and across the globe.">
+    <meta property="og:url" content="https://www.crecientech.com/">
+    <meta property="og:image" content="https://www.crecientech.com/img/og/crecientech-og.jpg">
+    <!-- Social Meta: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Custom Software Development & Digital Transformation | Crecientech Bangalore">
+    <meta name="twitter:description"
+        content="Crecientech offers custom software development, web & mobile apps, and digital transformation services for modern businesses in India and across the globe.">
+    <meta name="twitter:image" content="https://www.crecientech.com/img/og/crecientech-og.jpg">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Custom Software Development & Digital Transformation | Crecientech</title>
+    <!-- SEO: Updated title -->
+    <title>Custom Software Development & Digital Transformation | Crecientech Bangalore</title>
+
+    <!-- JSON-LD: Organization (homepage only) -->
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Crecientech Infosystem Pvt Ltd","url":"https://www.crecientech.com/","logo":"https://www.crecientech.com/img/navbar/Crecientech_logo.png","address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"India"},"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"ctsales@crecientech.com","telephone":"+91-9740033312"}}</script>
+
+    <!-- Schema: Organization — Implemented 2025-12-03 — Purpose: rich company info for search -->
+    <script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Crecientech Infosystem Pvt Ltd",
+      "legalName": "Crecientech Infosystem Pvt Ltd",
+      "url": "https://www.crecientech.com/",
+      "logo": "https://www.crecientech.com/img/navbar/Crecientech_logo.png",
+      "sameAs": [
+        "https://www.facebook.com/crecientech/",
+        "https://www.linkedin.com/company/crecientech/",
+        "https://x.com/crecientec/",
+        "https://www.instagram.com/crecientech/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "ctsales@crecientech.com",
+        "telephone": "+91-9740033312"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangalore",
+        "addressCountry": "India"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      },
+      "foundingDate": "2016",
+      "employee": {
+        "@type": "OrganizationRole",
+        "numberedPosition": 50
+      }
+    }</script>
+
+    <!-- Schema: WebSite — Implemented 2025-12-03 — Purpose: site-level metadata and search box -->
+    <script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Crecientech Infosystem",
+      "url": "https://www.crecientech.com/",
+      "description": "Crecientech offers custom software development, web & mobile apps, and digital transformation services.
+      ",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.crecientech.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }</script>
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.crecientech.com/"}]}</script>
 
     <script
         type="text/javascript">(function (w, s) { var e = document.createElement("script"); e.type = "text/javascript"; e.async = true; e.src = "https://cdn-in.pagesense.io/js/crecientechinfosystempvtltd/948d322fc3e7477b89e932b5e7b02676.js"; var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(e, x); })(window, "script");</script>
@@ -50,7 +125,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="img/navbar/navbar_logo.png" alt="Crecientech Logo">
+                <img src="img/navbar/navbar_logo.png" alt="Crecientech logo" loading="lazy" width="180" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,18 +145,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#products">Products</a>
                     </li>
-                    <!-- <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Blog</a>
-                                </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+
+
                     <!-- <li class="nav-item">
                                     <a class="nav-link" href="#team">Team</a>
                                 </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="/blog/">Blog</a>
-                    </li> -->
+
 
                     <li class="nav-item">
-                        <a class="nav-link" href="https://crecientech.zohorecruit.in/jobs/Careers">Careers</a>
+                        <a class="nav-link" href="careers.html">Careers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact-us">Contact Us</a>
@@ -90,6 +165,8 @@
             </div>
         </div>
     </nav>
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.crecientech.com/"}]}</script>
 
     <!-- SLIDER -->
     <div id="carouselExampleIndicators" class="carousel slide" data-touch="true" data-bs-ride="carousel">
@@ -108,7 +185,9 @@
                         <div class="col-12 text-center text-white">
                             <div class="card carousel-card">
                                 <div class="card-body">
-                                    <h1 class="carousel-header text-white mb-4 font-mont">Web & App Development</h1>
+                                    <!-- H1: Homepage primary heading -->
+                                    <h1 class="carousel-header text-white mb-4 font-mont">Custom Software Development &
+                                        Digital Transformation Company in Bangalore</h1>
                                     <h6
                                         class="carousel-body font-sans d-flex align-items-center text-white text-center">
                                         We offer full-cycle custom software development, including planning, design, and
@@ -130,8 +209,8 @@
                         <div class="col-12 text-center text-white">
                             <div class="card carousel-card">
                                 <div class="card-body">
-                                    <h1 class="carousel-header text-white mb-4 font-mont">NetSuite Consulting & ERP
-                                        Solutions</h1>
+                                    <h2 class="carousel-header text-white mb-4 font-mont">NetSuite Consulting & ERP
+                                        Solutions</h2>
                                     <h6
                                         class="carousel-body font-sans d-flex align-items-center text-white text-center">
                                         This software development company in Bangalore offers NetSuite ERP
@@ -150,13 +229,13 @@
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
         <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-        <img src="img/home/right1.svg" alt="Previous">
+        <img src="img/home/right1.svg" alt="Previous" loading="lazy" width="24" height="24">
         <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next">
         <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-        <img src="img/home/right1.svg" alt="Next">
+        <img src="img/home/right1.svg" alt="Next" loading="lazy" width="24" height="24">
         <span class="visually-hidden">Next</span>
     </button>
     </div>
@@ -280,15 +359,17 @@
                 <div class="col mt-5">
                     <div class="">
                         <h3 class="font-22-josefin products-header primary-black">OUR PRODUCTS</h3>
-                        <h2 class="font-48-josefin product-desc secondary-black">Own & Co-Development</h2>
+                        <h2 class="font-48-josefin product-desc secondary-black">Co-Development</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 padding col-md-12">
+                <!-- <div class="col-lg-6 padding col-md-12">
                     <div class="p-4 product-img d-flex justify-content-center">
-                        <img src="img/home/own-and-implemented.jpg"
-                            alt="Logo of Crecientech, a trusted software development company and leading IT consulting firm in Bangalore.">
+                        <picture>
+                            <source srcset="img/home/own-and-implemented.webp" type="image/webp">
+                            <img class="product-aspect" src="img/home/own-and-implemented.jpg" alt="Crecientech own and implemented products" loading="lazy" width="800" height="600">
+                        </picture>
                     </div>
                     <div class="text-center h-140 px-5">
                         <h3 class="font-22-josefin secondary-black">
@@ -351,12 +432,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-lg-6 padding col-md-12">
                     <div class="p-4 product-img d-flex justify-content-center">
-                        <img src="img/home/joint-development.jpg" alt="The expert team at Crecientech, a custom software development company and leading IT consulting firm in Bangalore, is actively collaborating on a high-impact project.
-">
+                        <picture>
+                            <source srcset="img/home/joint-development.webp" type="image/webp">
+                            <img class="product-aspect" src="img/home/joint-development.jpg"
+                                alt="Crecientech joint development initiative" loading="lazy" width="800" height="600">
+                        </picture>
                     </div>
                     <div class="text-center h-140 px-5">
                         <h3 class="font-22-josefin secondary-black">
@@ -368,7 +452,8 @@
 
                         </p>
                     </div>
-
+                </div>
+                <div class="col-lg-6 padding col-md-12">
                     <div class="row">
                         <div class="col">
                             <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -438,25 +523,32 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="text-center">
+                            <a href="products.html" class="know-btn">
+                                <button class="button button1 btn-blue"> KNOW MORE
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- <div class="text-black"> -->
 
-            <div class="row pt-4">
+            <!-- <div class="row pt-4">
                 <div class="col text-center">
                     <!-- <button class="button button1 btn-blue">
                         <a href="products.html" class="know-btn"> KNOW MORE </a>
                         <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </button> -->
+                    </button> --
                     <a href="products.html" class="know-btn">
                         <button class="button button1 btn-blue"> KNOW MORE
                             <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         </button>
                     </a>
                 </div>
-            </div>
+            </div> -->
             <!-- </div> -->
         </div>
     </section>
@@ -469,58 +561,64 @@
                     <div class="marquee-box">
                         <div class="marquee">
                             <figure>
-                                <img src="img/home/clients/AA.png" alt="featured creator">
+                                <img src="img/home/clients/AA.png" alt="AA client logo" loading="lazy" width="200"
+                                    height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/BCU_Big.png" alt="featured creator">
+                                <img src="img/home/clients/BCU_Big.png" alt="BCU client logo" loading="lazy" width="200"
+                                    height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/ecubes.jpg" alt="featured creator">
+                                <img src="img/home/clients/ecubes.jpg" alt="Ecubes client logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/esparsh.png" alt="featured creator">
+                                <img src="img/home/clients/esparsh.png" alt="Esparsh client logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/kavaho.png" alt="featured creator">
+                                <img src="img/home/clients/kavaho.png" alt="Kavaho client logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/kickdrum.png" alt="featured creator">
+                                <img src="img/home/clients/kickdrum.png" alt="Kickdrum client logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/Reversify-250x77-1.png" alt="featured creator">
+                                <img src="img/home/clients/Reversify-250x77-1.png" alt="Reversify client logo"
+                                    loading="lazy" width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/Tech_Mahindra.svg_.png" alt="featured creator">
+                                <img src="img/home/clients/Tech_Mahindra.svg_.png" alt="Tech Mahindra client logo"
+                                    loading="lazy" width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/worldsource.png" alt="featured creator">
+                                <img src="img/home/clients/worldsource.png" alt="Worldsource client logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/yantrix.jpg" alt="featured creator">
+                                <img src="img/home/clients/yantrix.jpg" alt="Yantrix client logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/Partners/PDXpert.jpeg" alt="featured creator">
+                                <img src="img/home/clients/AA.png" alt="AA client logo" loading="lazy" width="200"
+                                    height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/Partners/herbinger.svg" alt="featured creator">
+                                <img src="img/home/clients/BCU_Big.png" alt="Bangalore Central University logo"
+                                    loading="lazy" width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/Partners/Resolve.jpeg" alt="featured creator">
+                                <img src="img/home/clients/ecubes.jpg" alt="Ecubes client logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/AA.png" alt="featured creator">
+                                <img src="img/home/clients/esparsh.png" alt="Esparsh client logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/clients/BCU_Big.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/clients/ecubes.jpg" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/clients/esparsh.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/clients/kavaho.png" alt="featured creator">
+                                <img src="img/home/clients/kavaho.png" alt="Kavaho client logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
 
                         </div>
@@ -536,50 +634,144 @@
                     <div class="marquee-box">
                         <div class="marquee">
                             <figure>
-                                <img src="img/home/Partners/AA.png" alt="featured creator">
+                                <img src="img/home/Partners/AA.png" alt="AA partner logo" loading="lazy" width="200"
+                                    height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/Partners/india-startup.png" alt="featured creator">
+                                <img src="img/home/Partners/india-startup.png" alt="Startup India partner logo"
+                                    loading="lazy" width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/Partners/karnataka-startup.png" alt="featured creator">
+                                <img src="img/home/Partners/karnataka-startup.png" alt="Karnataka Startup partner logo"
+                                    loading="lazy" width="200" height="120">
                             </figure>
                             <figure>
-                                <img src="img/home/Partners/NASSCOM_logo.png" alt="featured creator">
+                                <img src="img/home/Partners/NASSCOM_logo.png" alt="NASSCOM partner logo" loading="lazy"
+                                    width="200" height="120">
                             </figure>
-                            <figure>
-                                <img src="img/home/Partners/ATF.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/AA.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/india-startup.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/karnataka-startup.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/NASSCOM_logo.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/ATF.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/AA.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/india-startup.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/karnataka-startup.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/NASSCOM_logo.png" alt="featured creator">
-                            </figure>
-                            <figure>
-                                <img src="img/home/Partners/ATF.png" alt="featured creator">
-                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4 pb-5">
+        <div class="row my-4">
+            <div class="col-12">
+                <h3 class="font-48-josefin clients-header text-center mb-4 secondary-black"> Frequently Asked Questions
+                </h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="border accordion accordion-flush" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-heading-1">
+                                    <button class="accordion-button collapsed font-500" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq-collapse-1" aria-expanded="false"
+                                        aria-controls="faq-collapse-1">
+                                        What is Crecientech's standard methodology for developing projects?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-1" class="accordion-collapse collapse"
+                                    aria-labelledby="faq-heading-1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body font-16-sans primary-gray">
+                                        Crecientech develops solutions using the Agile Scrum Methodology for execution
+                                        and follows an Agile Delivery Model to ensure flexible and collaborative project
+                                        outcomes.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-heading-2">
+                                    <button class="accordion-button collapsed font-500" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq-collapse-2" aria-expanded="false"
+                                        aria-controls="faq-collapse-2">
+                                        Which cloud platforms are supported in the Cloud and Infrastructure
+                                        Transformation service?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-2" class="accordion-collapse collapse"
+                                    aria-labelledby="faq-heading-2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body font-16-sans primary-gray">
+                                        They have expertise in transforming and optimizing infrastructure across major
+                                        providers, specifically supporting Google Cloud Platform (GCP) and Amazon Web
+                                        Services (AWS), along with DevOps.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-heading-3">
+                                    <button class="accordion-button collapsed font-500" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq-collapse-3" aria-expanded="false"
+                                        aria-controls="faq-collapse-3">
+                                        What key capabilities are offered under the Artificial Intelligence service?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-3" class="accordion-collapse collapse"
+                                    aria-labelledby="faq-heading-3" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body font-16-sans primary-gray">
+                                        Key AI capabilities include defining an AI Roadmap, Model Development (ML/DL),
+                                        various types of Annotation (Natural Language/Visual), OCR/ICR services, and
+                                        Data Mining/Analytics.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-heading-4">
+                                    <button class="accordion-button collapsed font-500" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq-collapse-4" aria-expanded="false"
+                                        aria-controls="faq-collapse-4">
+                                        How does Crecientech support companies using Oracle NetSuite ERP?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-4" class="accordion-collapse collapse"
+                                    aria-labelledby="faq-heading-4" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body font-16-sans primary-gray">
+                                        They provide comprehensive Consultation, seamless Implementation, Custom
+                                        Development using SuiteScript, and end-to-end Integration services for the
+                                        NetSuite platform.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-heading-5">
+                                    <button class="accordion-button collapsed font-500" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq-collapse-5" aria-expanded="false"
+                                        aria-controls="faq-collapse-5">
+                                        What types of development are covered under "Intelligent Web Applications"?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-5" class="accordion-collapse collapse"
+                                    aria-labelledby="faq-heading-5" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body font-16-sans primary-gray">
+                                        This service covers building Web and Mobile Applications (SPA/MPA/PWA),
+                                        integrating with conversational bots, and developing intelligent applications
+                                        using AI and Analytics capabilities.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-heading-6">
+                                    <button class="accordion-button collapsed font-500" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq-collapse-6" aria-expanded="false"
+                                        aria-controls="faq-collapse-6">
+                                        What is included in the Cloud and Infrastructure Transformation service?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-6" class="accordion-collapse collapse"
+                                    aria-labelledby="faq-heading-6" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body font-16-sans primary-gray">
+                                        This service focuses on optimizing infrastructure through Cloud Assessment &
+                                        Roadmap, Cloud Deployment & Migration, Support & Monitoring, DevOps, Automation,
+                                        and Security Assessments.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -705,61 +897,61 @@
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW98882429.htm"
                             target="_blank">
-                            <img src="img/review/one.png" alt="Glassdoor Reviews" style="height: 235px; width: 235px;">
+                            <img src="img/review/one.png" alt="Glassdoor Reviews" loading="lazy" width="235" height="235" style="height: 235px; width: 235px;">
                         </a>
                     </figure>
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW97542527.htm"
                             target="_blank">
-                            <img src="img/review/two.png" alt="Glassdoor Reviews" style="height: 235px; width: 235px;">
+                            <img src="img/review/two.png" alt="Glassdoor Reviews" loading="lazy" width="235" height="235" style="height: 235px; width: 235px;">
                         </a>
                     </figure>
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW88799630.htm"
                             target="_blank">
-                            <img src="img/review/three.png" alt="Glassdoor Reviews" style="height: 230px; width: 240px;">
+                            <img src="img/review/three.png" alt="Glassdoor Reviews" loading="lazy" width="240" height="230" style="height: 230px; width: 240px;">
                         </a>
                     </figure>
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW85908985.htm"
                             target="_blank">
-                            <img src="img/review/four.png" alt="Glassdoor Reviews" style="height: 235px; width: 235px;">
+                            <img src="img/review/four.png" alt="Glassdoor Reviews" loading="lazy" width="235" height="235" style="height: 235px; width: 235px;">
                         </a>
                     </figure>
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW84137458.htm"
                             target="_blank">
-                            <img src="img/review/five.png" alt="Glassdoor Reviews" style="height: 235px; width: 235px;">
+                            <img src="img/review/five.png" alt="Glassdoor Reviews" loading="lazy" width="235" height="235" style="height: 235px; width: 235px;">
                         </a>
                     </figure>
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW82231292.htm"
                             target="_blank">
-                            <img src="img/review/six.png" alt="Glassdoor Reviews" style="height: 235px; width: 235px;">
+                            <img src="img/review/six.png" alt="Glassdoor Reviews" loading="lazy" width="235" height="235" style="height: 235px; width: 235px;">
                         </a>
                     </figure>
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW75339994.htm"
                             target="_blank">
-                            <img src="img/review/seven.png" alt="Glassdoor Reviews" style="height: 235px; width: 235px;">
+                            <img src="img/review/seven.png" alt="Glassdoor Reviews" loading="lazy" width="235" height="235" style="height: 235px; width: 235px;">
                         </a>
                     </figure>
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW75316335.htm"
                             target="_blank">
-                            <img src="img/review/eight.png" alt="Glassdoor Reviews" style="height: 235px; width: 235px;">
+                            <img src="img/review/eight.png" alt="Glassdoor Reviews" loading="lazy" width="235" height="235" style="height: 235px; width: 235px;">
                         </a>
                     </figure>
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW75279861.htm"
                             target="_blank">
-                            <img src="img/review/nine.png" alt="Glassdoor Reviews" style="height: 235px; width: 235px;">
+                            <img src="img/review/nine.png" alt="Glassdoor Reviews" loading="lazy" width="235" height="235" style="height: 235px; width: 235px;">
                         </a>
                     </figure>
                     <figure style="background: #ffa601; border-radius: 6px;">
                         <a href="https://www.glassdoor.co.in/Reviews/Employee-Review-Crecientech-Infosystem-E1776032-RVW75259725.htm"
                             target="_blank">
-                            <img src="img/review/ten.png" alt="Glassdoor Reviews" style="height: 235px; width: 235px;">
+                            <img src="img/review/ten.png" alt="Glassdoor Reviews" loading="lazy" width="235" height="235" style="height: 235px; width: 235px;">
                         </a>
                     </figure>
                 </div>
@@ -781,8 +973,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="intro">
-                        <h6>Team</h6>
-                        <h1>Team Members</h1>
+                        <h6>Client Review</h6>
+                        <h2>Client Review</h2>
                         <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
                             roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
                     </div>
@@ -792,7 +984,7 @@
                 <div class="col-lg-4 col-md-8">
                     <div class="team-member">
                         <div class="image">
-                            <img src="img/team_1.jpg" alt="">
+                            <img src="img/team_1.jpg" alt="Crecientech team member portrait" loading="lazy" width="400" height="400">
                             <div class="social-icons">
                                 <a href="#"><i class='bx bxl-facebook'></i></a>
                                 <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -809,7 +1001,7 @@
                 <div class="col-lg-4 col-md-8">
                     <div class="team-member">
                         <div class="image">
-                            <img src="img/team_2.jpg" alt="">
+                            <img src="img/team_2.jpg" alt="Crecientech team member portrait" loading="lazy" width="400" height="400">
                             <div class="social-icons">
                                 <a href="#"><i class='bx bxl-facebook'></i></a>
                                 <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -826,7 +1018,7 @@
                 <div class="col-lg-4 col-md-8">
                     <div class="team-member">
                         <div class="image">
-                            <img src="img/team_3.jpg" alt="">
+                            <img src="img/team_3.jpg" alt="Crecientech team member portrait" loading="lazy" width="400" height="400">
                             <div class="social-icons">
                                 <a href="#"><i class='bx bxl-facebook'></i></a>
                                 <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -849,22 +1041,27 @@
         <div class="container footer-top text-left text-white">
             <div class="row">
                 <div class="col-lg-3 col-md-6 font-sans">
-                    <img src="img/navbar/Crecientech_logo.png" alt="Crecientech Logo">
+                    <img class="footer-logo" src="img/navbar/Crecientech_logo.png" alt="Crecientech Logo" loading="lazy"
+                        width="180" height="40">
                     <p>We Create. We Build. We Share.</p>
                     <div>
                         <a href="https://www.facebook.com/crecientech/">
                             <!-- <i class="fa fa-facebook-square" aria-hidden="true"></i> -->
-                            <img class="social" src="img/footer/fb.svg" alt="facebook logo">
+                            <img class="social" src="img/footer/fb.svg" alt="facebook logo" loading="lazy" width="24"
+                                height="24">
                         </a>
                         <a href="https://www.linkedin.com/company/crecientech/">
                             <!-- <i class="fa fa-linkedin" aria-hidden="true"></i> -->
-                            <img class="social" src="img/footer/linkedin1.svg" alt="linkedin Logo">
+                            <img class="social" src="img/footer/linkedin1.svg" alt="linkedin Logo" loading="lazy"
+                                width="24" height="24">
                         </a>
                         <a href="https://x.com/crecientec/">
-                            <img class="social" src="img/footer/x-logo.svg" alt="X Logo">
+                            <img class="social" src="img/footer/x-logo.svg" alt="X Logo" loading="lazy" width="24"
+                                height="24">
                         </a>
                         <a href="https://www.instagram.com/crecientech/">
-                            <img class="social" src="img/footer/Instagram_logo_2016.svg" alt="Instagram Logo">
+                            <img class="social" src="img/footer/Instagram_logo_2016.svg" alt="Instagram Logo"
+                                loading="lazy" width="24" height="24">
                         </a>
                     </div>
                 </div>
@@ -872,441 +1069,47 @@
                     <h2 class="font-mont">Location</h2>
                     <p>No.135, 7th Main Road, 4th Block, Jayanagar, Bangalore-560 011</p>
                     <p>+91-9740033312</p>
-                    <p>sales@crecientech.com</p>
+                    <p>ctsales@crecientech.com</p>
                 </div>
                 <!-- Contact Us Start -->
                 <div class="col-lg-6 col-md-12">
-                    <!-- <h2 class="font-mont">Contact Us</h2>
-                    <p>We’d love To Meet You In Person Or Via The Web!</p>
-                    <div class="d-flex justify-content-between ">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Email Address">
-                    </div>
-                    <div>
-                        <textarea name="message" id="" cols="50" rows="5" placeholder="Message"></textarea>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <button type="submit">SUBMIT
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </button>
-                    </div> -->
 
-
-
-                    <!-- Note :
-   - You can modify the font style and form style to suit your website. 
-   - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
-   - The Mandatory check script can modified as to suit your business needs. 
-   - It is important that you test the modified form before going live.-->
-                    <!-- <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'
-                        style='background-color: &#x23;FFFFFF;color: &#x23;000000;max-width: 600px;'>
-                        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                        <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
-
-                        <form id='webform699782000000335188' action='https://crm.zoho.in/crm/WebToLeadForm'
-                            name=WebToLeads699782000000335188 method='POST'
-                            onSubmit='javascript:document.charset="UTF-8"; return checkMandatory699782000000335188()'
-                            accept-charset='UTF-8'>
-                            <input type='text' style='display:none;' name='xnQsjsdp'
-                                value='688ee968dcf74bbc2a012df521fac4f7a7aae62e38b00dbde2333849caa1854a'></input>
-                            <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
-                            <input type='text' style='display:none;' name='xmIwtLD'
-                                value='dbcad0e8d4d274cdac21c99fa47f52575ec417d88ecd01084ece8f6c57fa4b3b522093f799a93a679322e0dd85cf28a9'></input>
-                            <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
-                            <input type='text' style='display:none;' name='returnURL'
-    value='https&#x3a;&#x2f;&#x2f;www.crecientech.com'>
-
-
-                            <!-- Do not remove this code. --
-                            <style>
-                                html,
-                                body {
-                                    margin: 0px;
-                                }
-
-                                #crmWebToEntityForm.zcwf_lblLeft {
-                                    width: 100%;
-                                    padding: 25px;
-                                    margin: 0 auto;
-                                    box-sizing: border-box;
-                                }
-
-                                #crmWebToEntityForm.zcwf_lblLeft * {
-                                    box-sizing: border-box;
-                                }
-
-                                #crmWebToEntityForm {
-                                    text-align: left;
-                                }
-
-                                #crmWebToEntityForm * {
-                                    direction: ltr;
-                                }
-
-                                .zcwf_lblLeft .zcwf_title {
-                                    word-wrap: break-word;
-                                    padding: 0px 6px 10px;
-                                    font-weight: bold
-                                }
-
-                                .zcwf_lblLeft.cpT_primaryBtn:hover {
-                                    background: linear-gradient(#02acff 0, #006be4 100%) no-repeat padding-box !important;
-                                    box-shadow: 0 -2px 0 0 #0159b9 inset !important;
-                                    border: 0 !important;
-                                    color: #fff !important;
-                                    outline: 0 !important;
-                                }
-
-                                .zcwf_lblLeft .zcwf_col_fld input[type=text],
-                                input[type=password],
-                                .zcwf_lblLeft .zcwf_col_fld textarea {
-                                    width: 60%;
-                                    border: 1px solid #c0c6cc !important;
-                                    resize: vertical;
-                                    border-radius: 2px;
-                                    float: left;
-                                }
-
-                                .zcwf_lblLeft .zcwf_col_lab {
-                                    width: 30%;
-                                    word-break: break-word;
-                                    padding: 0px 6px 0px;
-                                    margin-right: 10px;
-                                    margin-top: 5px;
-                                    float: left;
-                                    min-height: 1px;
-                                }
-
-                                .zcwf_lblLeft .zcwf_col_fld {
-                                    float: left;
-                                    width: 68%;
-                                    padding: 0px 6px 0px;
-                                    position: relative;
-                                    margin-top: 5px;
-                                }
-
-                                .zcwf_lblLeft .zcwf_privacy {
-                                    padding: 6px;
-                                }
-
-                                .zcwf_lblLeft .wfrm_fld_dpNn {
-                                    display: none;
-                                }
-
-                                .dIB {
-                                    display: inline-block;
-                                }
-
-                                .zcwf_lblLeft .zcwf_col_fld_slt {
-                                    width: 60%;
-                                    border: 1px solid #ccc;
-                                    background: #fff;
-                                    border-radius: 4px;
-                                    font-size: 14px;
-                                    float: left;
-                                    resize: vertical;
-                                    padding: 2px 5px;
-                                }
-
-                                .zcwf_lblLeft .zcwf_row:after,
-                                .zcwf_lblLeft .zcwf_col_fld:after {
-                                    content: '';
-                                    display: table;
-                                    clear: both;
-                                }
-
-                                .zcwf_lblLeft .zcwf_col_help {
-                                    float: left;
-                                    margin-left: 7px;
-                                    font-size: 14px;
-                                    max-width: 35%;
-                                    word-break: break-word;
-                                }
-
-                                .zcwf_lblLeft .zcwf_help_icon {
-                                    cursor: pointer;
-                                    width: 16px;
-                                    height: 16px;
-                                    display: inline-block;
-                                    background: #fff;
-                                    border: 1px solid #c0c6cc;
-                                    color: #c1c1c1;
-                                    text-align: center;
-                                    font-size: 11px;
-                                    line-height: 16px;
-                                    font-weight: bold;
-                                    border-radius: 50%;
-                                }
-
-                                .zcwf_lblLeft .zcwf_row {
-                                    margin: 15px 0px;
-                                }
-
-                                .zcwf_lblLeft .formsubmit {
-                                    margin-right: 5px;
-                                    cursor: pointer;
-                                    color: var(--baseColor);
-                                    font-size: 14px;
-                                }
-
-                                .zcwf_lblLeft .zcwf_privacy_txt {
-                                    width: 90%;
-                                    color: rgb(0, 0, 0);
-                                    font-size: 14px;
-                                    font-family: Verdana;
-                                    display: inline-block;
-                                    vertical-align: top;
-                                    color: var(--baseColor);
-                                    padding-top: 2px;
-                                    margin-left: 6px;
-                                }
-
-                                .zcwf_lblLeft .zcwf_button {
-                                    font-size: 14px;
-                                    color: var(--baseColor);
-                                    border: 1px solid #c0c6cc;
-                                    padding: 3px 9px;
-                                    border-radius: 4px;
-                                    cursor: pointer;
-                                    max-width: 120px;
-                                    overflow: hidden;
-                                    text-overflow: ellipsis;
-                                    white-space: nowrap;
-                                }
-
-                                .zcwf_lblLeft .zcwf_tooltip_over {
-                                    position: relative;
-                                }
-
-                                .zcwf_lblLeft .zcwf_tooltip_ctn {
-                                    position: absolute;
-                                    background: #dedede;
-                                    padding: 3px 6px;
-                                    top: 3px;
-                                    border-radius: 4px;
-                                    word-break: break-word;
-                                    min-width: 100px;
-                                    max-width: 150px;
-                                    color: var(--baseColor);
-                                    z-index: 100;
-                                }
-
-                                .zcwf_lblLeft .zcwf_ckbox {
-                                    float: left;
-                                }
-
-                                .zcwf_lblLeft .zcwf_file {
-                                    width: 55%;
-                                    box-sizing: border-box;
-                                    float: left;
-                                }
-
-                                .clearB:after {
-                                    content: '';
-                                    display: block;
-                                    clear: both;
-                                }
-
-                                @media all and (max-width: 600px) {
-
-                                    .zcwf_lblLeft .zcwf_col_lab,
-                                    .zcwf_lblLeft .zcwf_col_fld {
-                                        width: auto;
-                                        float: none !important;
-                                    }
-
-                                    .zcwf_lblLeft .zcwf_col_help {
-                                        width: 40%;
-                                    }
-                                }
-                            </style>
-                            <div class='zcwf_title' style='max-width: 600px;color: &#x23;000000; font-family:Verdana;'>
-                                Contact Details</div>
-                            <div class='zcwf_row'>
-                                <div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label
-                                        for='Last_Name'>Name<span style='color:red;'>*</span></label></div>
-                                <div class='zcwf_col_fld'><input type='text' id='Last_Name' name='Last Name'
-                                        maxlength='80'></input>
-                                    <div class='zcwf_col_help'></div>
-                                </div>
+                    <div id="contact-form-wrapper" style="max-width: 600px;">
+                        <h2 class="font-mont">Contact Us</h2>
+                        <form class="contact-form" novalidate>
+                            <div class="mb-3">
+                                <label for="contact-name" class="form-label">Name</label>
+                                <input type="text" id="contact-name" name="name" class="form-control" required
+                                    aria-required="true" autocomplete="name" placeholder="Your full name"
+                                    aria-describedby="contact-name-error">
+                                <div id="contact-name-error" class="invalid-feedback"></div>
                             </div>
-                            <div class='zcwf_row'>
-                                <div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label
-                                        for='Mobile'>Mobile</label></div>
-                                <div class='zcwf_col_fld'><input type='text' id='Mobile' name='Mobile'
-                                        maxlength='30'></input>
-                                    <div class='zcwf_col_help'></div>
-                                </div>
+                            <div class="mb-3">
+                                <label for="contact-email" class="form-label">Email</label>
+                                <input type="email" id="contact-email" name="email" class="form-control" required
+                                    aria-required="true" inputmode="email" autocomplete="email"
+                                    placeholder="you@example.com" aria-describedby="contact-email-error">
+                                <div id="contact-email-error" class="invalid-feedback"></div>
                             </div>
-                            <div class='zcwf_row'>
-                                <div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label
-                                        for='Email'>Email</label></div>
-                                <div class='zcwf_col_fld'><input type='text' ftype='email' autocomplete='false'
-                                        id='Email' name='Email' crmlabel='' maxlength='100'></input>
-                                    <div class='zcwf_col_help'></div>
-                                </div>
+                            <div class="mb-3">
+                                <label for="contact-subject" class="form-label">Subject</label>
+                                <input type="text" id="contact-subject" name="subject" class="form-control" required
+                                    aria-required="true" placeholder="What is this regarding?"
+                                    aria-describedby="contact-subject-error">
+                                <div id="contact-subject-error" class="invalid-feedback"></div>
                             </div>
-                            <div class='zcwf_row'>
-                                <div class='zcwf_col_lab' style='font-size:14px; font-family: Verdana;'><label
-                                        for='Description'>Description</label></div>
-                                <div class='zcwf_col_fld'><textarea id='Description' name='Description'></textarea>
-                                    <div class='zcwf_col_help'></div>
-                                </div>
+                            <div class="mb-3">
+                                <label for="contact-message" class="form-label">Message</label>
+                                <textarea id="contact-message" name="message" class="form-control" rows="5" required
+                                    aria-required="true" placeholder="Tell us more"
+                                    aria-describedby="contact-message-error"></textarea>
+                                <div id="contact-message-error" class="invalid-feedback"></div>
                             </div>
-                            <div class='zcwf_row'>
-                                <div class='zcwf_col_lab'></div>
-                                <div class='zcwf_col_fld'>
-                                    <input type='submit' id='formsubmit'
-                                        class='formsubmit zcwf_button' value='Submit' title='Submit'>
-                                        <input type='reset'
-                                        class='zcwf_button' name='reset' value='Reset' title='Reset'>
-                                    </div>
-                            </div>
-                            <script>
-                                function validateEmail699782000000335188() {
-                                    var form = document.forms['WebToLeads699782000000335188'];
-                                    var emailFld = form.querySelectorAll('[ftype=email]');
-                                    var i;
-                                    for (i = 0; i < emailFld.length; i++) {
-                                        var emailVal = emailFld[i].value;
-                                        if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
-                                            var atpos = emailVal.indexOf('@');
-                                            var dotpos = emailVal.lastIndexOf('.');
-                                            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                                                alert('Please enter a valid email address. ');
-                                                emailFld[i].focus();
-                                                return false;
-                                            }
-                                        }
-                                    }
-                                    return true;
-                                }
-
-                                function checkMandatory699782000000335188() {
-                                    var mndFileds = new Array('Last Name');
-                                    var fldLangVal = new Array('Name');
-                                    for (i = 0; i < mndFileds.length; i++) {
-                                        var fieldObj = document.forms['WebToLeads699782000000335188'][mndFileds[i]];
-                                        if (fieldObj) {
-                                            if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                                                if (fieldObj.type == 'file') {
-                                                    alert('Please select a file to upload.');
-                                                    fieldObj.focus();
-                                                    return false;
-                                                }
-                                                alert(fldLangVal[i] + ' cannot be empty.');
-                                                fieldObj.focus();
-                                                return false;
-                                            } else if (fieldObj.nodeName == 'SELECT') {
-                                                if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
-                                                    alert(fldLangVal[i] + ' cannot be none.');
-                                                    fieldObj.focus();
-                                                    return false;
-                                                }
-                                            } else if (fieldObj.type == 'checkbox') {
-                                                if (fieldObj.checked == false) {
-                                                    alert('Please accept  ' + fldLangVal[i]);
-                                                    fieldObj.focus();
-                                                    return false;
-                                                }
-                                            }
-                                            try {
-                                                if (fieldObj.name == 'Last Name') {
-                                                    name = fieldObj.value;
-                                                }
-                                            } catch (e) { }
-                                        }
-                                    }
-                                    if (!validateEmail699782000000335188()) { return false; }
-
-                                    var urlparams = new URLSearchParams(window.location.search);
-                                    if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
-                                        var webform = document.getElementById('webform699782000000335188');
-                                        var service = urlparams.get('service');
-                                        var smarturlfield = document.createElement('input');
-                                        smarturlfield.setAttribute('type', 'hidden');
-                                        smarturlfield.setAttribute('value', service);
-                                        smarturlfield.setAttribute('name', 'service');
-                                        webform.appendChild(smarturlfield);
-                                    }
-
-                                    document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-                                }
-
-                                function tooltipShow699782000000335188(el) {
-                                    var tooltip = el.nextElementSibling;
-                                    var tooltipDisplay = tooltip.style.display;
-                                    if (tooltipDisplay == 'none') {
-                                        var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
-                                        for (i = 0; i < allTooltip.length; i++) {
-                                            allTooltip[i].style.display = 'none';
-                                        }
-                                        tooltip.style.display = 'block';
-                                    } else {
-                                        tooltip.style.display = 'none';
-                                    }
-                                }
-                            </script>
-                            <!-- Do not remove this --- Analytics Tracking code starts --
-                            <script id='wf_anal'
-                                src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=d1f87d0f231166dd3f0441bc7cc3e211c65980829703ff3bcebedba83a683ea531bdcb893be6fdba3117011c8b027d22giddd43be927f5e91a1eae71616dd4eb0d357c8855eff59466473358cd58a08a0bbgid8bd6eb4ec5b6ecf649462e25c0b794ac6485c2c6e821068b6a8028a5f3b680f6gid6e79891a6837c71c6c6f7f245d3989066f77f4b34882223a372e6f7d55de6532&tw=8ff913bd4a24af12c8c247d05655f1494fc6b31821dfc72070f82244ba5dcc63'></script>
-                            <!-- Do not remove this --- Analytics Tracking code ends. --
+                            <button type="submit" class="btn btn-primary button button1 btn-blue"
+                                aria-label="Submit contact form">Submit</button>
+                            <div class="mt-2 contact-status" role="status" aria-live="polite"></div>
                         </form>
-                    </div> -->
-
-                    <!-- Contact Us Form (Custom) -->
-<div id="contact-form-wrapper" style="max-width: 600px;">
-    <h2 class="font-mont">Contact Us</h2>
-    <p>We’d love to connect with you for projects, partnerships, or consultations.</p>
-
-    <form id="contactForm">
-        <div class="zcwf_row d-flex mb-3">
-            <div class="zcwf_col_lab" style="width: 30%; font-size:14px; font-family: Verdana;">
-                <label for="cf_name">Name<span style="color:red;">*</span></label>
-            </div>
-            <div class="zcwf_col_fld" style="width: 70%;">
-                <input type="text" id="cf_name" name="name" maxlength="80" class="form-control" required>
-            </div>
-        </div>
-
-        <div class="zcwf_row d-flex mb-3">
-            <div class="zcwf_col_lab" style="width: 30%; font-size:14px; font-family: Verdana;">
-                <label for="cf_mobile">Mobile</label>
-            </div>
-            <div class="zcwf_col_fld" style="width: 70%;">
-                <input type="text" id="cf_mobile" name="mobile" maxlength="30" class="form-control">
-            </div>
-        </div>
-
-        <div class="zcwf_row d-flex mb-3">
-            <div class="zcwf_col_lab" style="width: 30%; font-size:14px; font-family: Verdana;">
-                <label for="cf_email">Email</label>
-            </div>
-            <div class="zcwf_col_fld" style="width: 70%;">
-                <input type="email" id="cf_email" name="email" maxlength="100" class="form-control">
-            </div>
-        </div>
-
-        <div class="zcwf_row d-flex mb-3">
-            <div class="zcwf_col_lab" style="width: 30%; font-size:14px; font-family: Verdana;">
-                <label for="cf_message">Message</label>
-            </div>
-            <div class="zcwf_col_fld" style="width: 70%;">
-                <textarea id="cf_message" name="message" rows="4" class="form-control"></textarea>
-            </div>
-        </div>
-
-        <div class="zcwf_row d-flex justify-content-end mt-3">
-            <button type="submit" id="cf_submit" class="zcwf_button btn-blue button button1 text-black">
-                SUBMIT
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </button>
-        </div>
-
-        <!-- Success / error messages -->
-        <div id="cf_status" style="margin-top:10px; font-size:14px; display:none;"></div>
-    </form>
-</div>
+                    </div>
 
 
 
@@ -1332,10 +1135,40 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="contactSuccessModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thank you</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thank you for your message. We will get back to you shortly.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init({
+                publicKey: "a68iFNLpSUwIQ1m9u"
+            });
+        })();
+    </script>
+
+    <script src="js/app.js"></script>
+
     <script src="js/app.js"></script>
     <script src="https://www.glassdoor.co.in/static/js/api/widget/v1.js"></script>
 
@@ -1363,58 +1196,48 @@
     </script>
     <script src="https://cdn.jsdelivr.net/gh/WayneSimpson/n8n-chatbot-template@ba944c3/chat-widget.js"></script>
 
+
+
     <script>
-        (function () {
-            var path = location.pathname;
-            if (path.startsWith('/blog/')) {
-                document.querySelectorAll('.navbar .nav-link').forEach(function (a) {
-                    var href = a.getAttribute('href');
-                    if (href === '/blog/' || href === '/blog/index.html') a.classList.add('active');
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            if (!form) return;
+
+            const submitBtn = document.getElementById('cf_submit');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault(); // stop normal form submit
+
+                const nameInput = document.getElementById('cf_name');
+                const emailInput = document.getElementById('cf_email');
+                const mobileInput = document.getElementById('cf_mobile');
+                const messageInput = document.getElementById('cf_message');
+
+                const name = nameInput ? nameInput.value.trim() : '';
+
+                if (!name) {
+                    alert('Please enter your name.');
+                    if (nameInput) nameInput.focus();
+                    return;
+                }
+
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                }
+
+                // (Optional) for debugging in console
+                console.log('Contact form submitted:', {
+                    name: name,
+                    email: emailInput ? emailInput.value.trim() : '',
+                    mobile: mobileInput ? mobileInput.value.trim() : '',
+                    message: messageInput ? messageInput.value.trim() : ''
                 });
-            }
-        })();
+
+                // ✅ Redirect to Thank You page
+                window.location.href = 'thank-you.html';
+            });
+        });
     </script>
-
-    <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('contactForm');
-    if (!form) return;
-
-    const submitBtn = document.getElementById('cf_submit');
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault(); // stop normal form submit
-
-      const nameInput = document.getElementById('cf_name');
-      const emailInput = document.getElementById('cf_email');
-      const mobileInput = document.getElementById('cf_mobile');
-      const messageInput = document.getElementById('cf_message');
-
-      const name = nameInput ? nameInput.value.trim() : '';
-
-      if (!name) {
-        alert('Please enter your name.');
-        if (nameInput) nameInput.focus();
-        return;
-      }
-
-      if (submitBtn) {
-        submitBtn.disabled = true;
-      }
-
-      // (Optional) for debugging in console
-      console.log('Contact form submitted:', {
-        name: name,
-        email: emailInput ? emailInput.value.trim() : '',
-        mobile: mobileInput ? mobileInput.value.trim() : '',
-        message: messageInput ? messageInput.value.trim() : ''
-      });
-
-      // ✅ Redirect to Thank You page
-      window.location.href = 'thank-you.html';
-    });
-  });
-</script>
 
 
 
