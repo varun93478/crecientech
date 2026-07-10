@@ -1692,8 +1692,8 @@ footer button:hover .fa-arrow-right {
 }
 
 .carousel-bg4 {
-    background: url(../img/home/bg-4.jpg);
-    background-position: right !important;
+    background: url(../img/home/netsuite-erp-hero-bg.png);
+    background-position: center right !important;
 }
 
 .card-body {
